@@ -3,58 +3,8 @@
 <html>
 <head>
     <script type="text/javascript" src="JS/game1.js"></script>
-    <style>
-    #navbar{
-       background-color:aqua;
-         text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-     }
-    #navbar a{
-	margin-left: 40px;
-	position: relative;
-    font-size: 25px;
-}
-   h1{
-       font-family:cursive;
-    font-size: 35px;
-        }
-
-    body{
-       background-color:azure;
-        }
-
-        h1,h2,p{
-        display: block;
-        text-align: center;
-        }
-
-     
-     table {
-  width: 20%;
-  height: 80%;
-  margin: 1em auto;
-  
-}
-td {
-  border: 1px solid grey;
-}
-td.circle:before {
-  content: attr(data-char);
-  display: block;
-  background-color: red;
- 
-  width: 40px;
-  height: 40px;
-  line-height:40px;
-  text-align:center;
-  vertical-align: middle;
-  border-radius: 50%;
-  margin:0 auto;
-}
-
+    <link rel="stylesheet" href="CSS/game1.css">
    
-    </style>
 <meta charset="utf-8">
 <title> Web Game </title>
 </head>
@@ -92,7 +42,15 @@ td.circle:before {
   </tr>
   
   <tr>
-  <input type="button" value="Start" id = "startButton" onclick="startToPause();"> 
+  <input type="button" value="Start" id = "startButton" onclick="startGame();"> 
+  </tr>
+
+  <tr>
+   <div>
+       Game ends in <span id="timer">60</span> seconds!
+   </div>
+
+       
   </tr>
        
 </table>
