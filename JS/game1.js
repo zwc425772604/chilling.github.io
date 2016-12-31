@@ -1,3 +1,4 @@
+var myBar;
 function startGame() {
     "use strict";
     var button = document.getElementById("startButton");
@@ -14,15 +15,16 @@ function startGame() {
 function timeCount() {
     "use strict";
     var hou = 0, sec = 60;
-    setInterval(function () {
+    myVar = setInterval(function () {
 
-        document.getElementById("timer").innerHTML = hou + " : " + sec;
+       
         sec = sec - 1;
+        document.getElementById("timer").innerHTML = hou + " : " + sec;
         if (sec === 0) {
-            alert("times out");
-            stopTime();
+          document.getElementById("timer").innerHTML = "Game ends";
+            clearInterval(myVar);
         }
-        
+         
     }, 1000);
     
 }
