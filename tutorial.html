@@ -18,17 +18,11 @@
     <meta name="author" content="Xitang and Weichao ">
     <meta name="keywords" content="Street workout, 运动, gym, ">
     
-    <script>
-    $(document).ready()
-    {
-        initSlideshow();
-    }    
-    window.on  
-    </script>
+    
         
 </head>
 
-<body>
+<body onload = "initSlideshow()">
     <div class = "wrapper">
         
     <div class = "header">
@@ -53,11 +47,7 @@
        <div class = "pic">
         <img id = "slide_img" />
         <div id = "slide_caption"></div>
-         <div id="slideshow_controls">
-		<input id="previous_button" type="image" src="./icons/Previous.png" onclick="processPreviousRequest()">
-		<input id="play_pause_button" type="image" src="./icons/Play.png" onclick="processPlayPauseRequest()">
-		<input id="next_button" type="image" src="./icons/Next.png" onclick="processNextRequest()">
-	    </div>
+       
         </div>
         
         
