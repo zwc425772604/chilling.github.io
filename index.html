@@ -1,65 +1,189 @@
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>全民运动</title>
-    
-    <script type="text/javascript" src="JS/home.js"></script>
-    <link rel="stylesheet" href="CSS/home.css">
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <meta name="description" content="This site helps to promote street workout">
-    <meta name="author" content="Xitang and Weichao ">
-    <meta name="keywords" content="Street workout, 运动, gym, ">
-    
+
+<html>
+<head>
+<meta charset="utf-8">
+     <link rel="stylesheet" href="css/stylesheet.css">
+    <script type = text/javascript src = "js/javascript.js"></script>
+<title> Weichao Zhao </title>
 </head>
 
 <body>
-    <div class = "wrapper">
-        
-    <div class = "header">
-        <header>
-            <figure>
-                 <a title="全民街头健身运动"
-              href="http://www.americandreamfromscratch.org">
-              <img src="images/logo.png" id="logo" alt="全民街头健身运动"  /></a>
-
-            </figure>
-            <nav>
-              <ul class = "navbar">
-                <li> <a href = "index.html">首页 </a> </li>
-                <li> <a href = "tutorial.html">教程</a></li>
-                <li> <a href = "AboutUs.html">关于我们</a></li>
-              </ul>
-            </nav>
-        </header>
-    </div>
-        
-    <div class = "middle">
-        <table class = "pictures">
-         <tr>
-          <td>
-           <img src = "img/girl.jpg"  class = "child" width = 300 height = 300px>
-          </td>
-          <td>
-           <img src = "img/women.jpg"  class = "women"  width = 300 height = 300px>
-          </td>
-          <td> 
-           <img src = "img/elder.jpg"  class = "elder"  width = 300 height = 300px>
-          </td>
-         </tr>
-        
-        </table>
-    
-    </div>
     
     
-    </div>
    
     
+        
+   <div id = "navbar">
+   
+   <a class = "open_nav" href = "./index.html" id = "home_link">Home</a>
+   <a class = "nav" href = "#education" id = "education_link">Education</a>
+   <a class = "nav" href = #hobby id = "resume_link">Hobby</a>
+   <a class = "nav" href = #projects id = "project_link"> Projects</a>
+    </div>
+    
+    <div class = "header">
+       <h1 id = "name">HI, THIS IS WEICHAO ZHAO.</h1>
+       
+       <!-- <audio src = "music/fade.mp3" loop = "true" autoplay></audio>  -->
+       <!-- with controls -->
+  <audio src="music/dok2.mp3" controls>	
+	<embed 
+		src="music/dok2.mp3"
+		width="300"
+		height="90"
+		loop="false"
+		autostart="true">
+</audio> 
+   </div>
+    
+    <div id = "introduction">
+    
+        <img id = "profile" src = "./images/profile.jpg"  width= 35% 
+             alt = "facebook profile pic" >
+       
+        <p> My name is Wei Chao Zhao. I am a junior, majoring in Computer Science.</p>
+    
+    </div>
+    <hr>
+    <div id = "education">
+        <h2 id = "education_header"> Courses History in College </h2>
+      <div class = "buffalo">
+        <figure>
+          <img id = "buffalo_logo" src = "images/buffalo.png" width = 100%>
+          </figure>  
+      <div class = "semester">
+      <table>
+      <th> Freshman Fall 2014 <hr> </th>
+          <tr> <td> CSE 115 - Intro to CS Majors 1 </td> </tr>
+          <tr> <td> MTH 309 - Intro Linear Algebra</td> </tr>
+          <tr> <td> UGC 111 - World Civilization 1</td> </tr>
+          <tr> <td> CHE 101 - General Chemistry</td> </tr>
+      </table>
+      </div>
+        
+      <div class = "semester">
+        <table>
+         <th> Freshman Spring 2015 <hr>  </th> 
+         <tr> <td> CSE 116 - Intro to CS Majors 2</td> </tr>
+         <tr> <td> CSE 191 - Intro Discrete Structures</td> </tr>  
+         <tr> <td> CHE 102 - General Chemistry</td> </tr>
+         <tr> <td> UGC 112 - World Civilization 2</td> </tr>
+         </table>
+        <!--
+        </div> 
+          <div class = "semester">
+          <table>
+              <tr> <td> Overall GPA - 3.71.</td></tr>
+              
+              </table>
+          </div>
+         -->
+    </div>
+          
+        </div>
+        
+        <!-- Stony Brook Courseswork  -->
+        <div class = "stonybrook">
+         <figure>
+            <img src = "images/stonybrook.png" width = 100% onclick = "jumpToSBU()">
+            </figure>
+         <div class = "semester">
+      <table>
+      <th> Sophomore Fall 2015 <hr> </th>
+          <tr> <td> CSE 219 - Computer Science III </td> </tr>
+          <tr> <td> AMS 301 - Finite Mathematical Structures</td> </tr>
+          <tr> <td> MUS 119 - Elements of Music</td> </tr>
+          <tr> <td> GEO 102 - The Earth </td> </tr>
+          <tr> <td> ESL 192 - High Intermediate Writing </td></tr>
+      </table>
+      </div>
+        
+      <div class = "semester">
+        <table>
+         <th> Sophomore Spring 2016 <hr>  </th> 
+         <tr> <td> AMS 310 - Survey of Probability and Stat</td> </tr>
+         <tr> <td> CSE 220 - Systems Fundamentals I</td> </tr>  
+         <tr> <td> CSE 373 - Analysis of Algorithms </td> </tr>
+         <tr> <td> POL 102 - Intro to American Government</td> </tr>
+         <tr> <td> ESL 194 - Advanced Composition</td></tr>
+         </table>
+        
+        </div>
+            
+            
+        <div class = "semester">
+        <table>
+         <th> Sophomore Summer 2016 <hr>  </th> 
+         <tr> <td> WRT 101 - Introductory Writing Workshop </td> </tr>
+         <tr> <td> WRT 102 - Intermediate Writing Workshop</td> </tr>  
+         <tr> <td> CSE 346 - Computer Communications   </td> </tr>
+         
+         </table>
+        
+        </div>
+            
+        <div class = "semester">
+        <table>
+         <th> Junior Fall 2016 <hr>  </th> 
+         <tr> <td> WRT 101 - Intro to Web Dsgn & Programmg </td> </tr>
+         <tr> <td> CSE 303 - Intro to Theory of Computation</td> </tr>  
+         <tr> <td> CSE 307 - Principles of Progr Languages  </td> </tr>
+         <tr> <td> CSE 312 - Legal Issues in Info Systems </td> </tr>  
+         <tr> <td> CSE 320 - Systems Fundamentals II </td> </tr>
+         </table>
+        
+        </div>
+            
+        <div class = "semester">
+            <table>
+         <th> Junior Spring 2017 <hr>  </th> 
+         <tr> <td> CSE 305 - Principles of Database Systems</td> </tr>  
+         <tr> <td> CSE 320 - Systems Fundamentals II  </td> </tr>
+         <tr> <td> CSE 336 - Internet Programming </td> </tr>  
+         <tr> <td> CSE 337 - Scripting Languages </td> </tr>
+         </table>
+            
+            
+            
+       </div>
+            
+        <div class = "semester">
+            <table>
+         <th> Senior Fall 2017 <hr>  </th> 
+         <tr> <td> CSE 308 - Software Engineering</td> </tr>  
+         <tr> <td> CSE 331 - Computer Security Fundamentals  </td> </tr>
+         <tr> <td> CSE 300 - Technical Communications </td> </tr>  
+         <tr> <td> PHI 108 - Logical and Critical Reasoning  </td> </tr>
+         </table>
+            
+            
+            
+       </div>
+            
+        
+        
+       
+        
+        </div>
+        
+        
+        
+        </div>
+    
+    <div class = content-right>
+      <p> My name is Wei Chao Zhao. I am a junior, majoring in Computer Science.</p>
+    </div>
+    
+    
+           
+   
+   
+
+
+
+<p id="author"> <script type="text/javascript">document.write("Last Modified " + document.lastModified)</script>  <br />Author: Weichao Zhao <br /> </p>
     
 </body>
-    
 </html>

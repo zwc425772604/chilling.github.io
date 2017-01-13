@@ -1,0 +1,100 @@
+
+.header{
+    background-color:salmon;
+    width: 70%;
+    margin-left: 15%;
+   
+}
+/*  nav bar */
+  #navbar{
+      background-color:aqua; 
+      text-align: center;
+      overflow:hidden;
+      width: 70%;
+      margin-left: 15%;
+    
+  
+     }
+        
+   #navbar a{
+	
+	position: relative;
+    font-size: 25px;
+     padding: 10px 20px;
+   }
+
+   #navbar a:hover{
+    color: red;
+   }
+
+   h1{
+       font-family:cursive;
+       font-size: 35px;
+       text-align: center;
+    }
+        
+    body{
+       background-color:azure;
+       
+        width: 90%;
+        margin: 0 auto;
+        }
+  
+
+
+/* introduction, picture and short description   */
+#introduction{ 
+    margin-left: 15%;
+    width: 70%;
+    display:inline-block;
+    background-color: bisque;
+}
+#profile{
+    float:left;
+}
+
+/*    */
+#education{
+    
+}
+ 
+#education_header{
+    text-align: center;
+    font-family:monospace;
+}
+
+.buffalo, .stonybrook{
+   float:left;
+   overflow: hidden;
+   width: 70%;
+   margin-left: 15%;
+}
+.semester {
+			text-align: center;
+			width:36%;
+			margin-left: 7%;
+			margin-top: 2%;
+			float: left;
+			background-color: white;
+			overflow: hidden;
+			border: 1px solid lightgray;
+			}
+
+table {
+			text-align: center;
+			font-size: 85%;
+			}
+			
+			tr:nth-child(even) {
+			background-color: #FAE1E1;
+			}
+			hr {
+			border: 1px solid lightgray;
+			width: 25%;}
+
+/* education */
+
+div.content-right{
+    display: inline-block;
+}
+
