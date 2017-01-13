@@ -6,38 +6,46 @@
    
 }
 /*  nav bar */
-  #navbar{
+  ul.navbar{
       background-color:aqua; 
-      text-align: center;
+     
       overflow:hidden;
-      width: 70%;
-      margin-left: 15%;
-    
-  
+      width: 10%;
+      
+      float:left;
+      position: fixed;
+      list-style-type:circle;
      }
-        
-   #navbar a{
-	
-	position: relative;
-    font-size: 25px;
-     padding: 10px 20px;
-   }
+ul.navbar li{
+    padding: 10px;
+}
 
-   #navbar a:hover{
+ul.navbar li a{
+   
+     display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+ul.navbar li a:hover{
     color: red;
-   }
+}
 
    h1{
        font-family:cursive;
-       font-size: 35px;
+       font-size: 45px;
        text-align: center;
     }
+
         
     body{
-       background-color:azure;
+       /* background-color:azure; */
        
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
+        background-image:url(http://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Image.jpg);
+        
         }
   
 
@@ -53,9 +61,16 @@
     float:left;
 }
 
-/*    */
+
+/* education */
+h2{
+    font-size: 40px;
+}
+
 #education{
-    
+   background-color: aquamarine;
+   width: 70%;
+    margin-left: 15%;
 }
  
 #education_header{
@@ -68,6 +83,15 @@
    overflow: hidden;
    width: 70%;
    margin-left: 15%;
+   
+}
+
+.buffalo{
+    background-color: #00bfff;
+}
+
+.stonybrook{
+    background-image: url(http://pnge.org/wp-content/uploads/2016/11/background-image.jpg);
 }
 .semester {
 			text-align: center;
@@ -92,9 +116,12 @@ table {
 			border: 1px solid lightgray;
 			width: 25%;}
 
-/* education */
 
-div.content-right{
-    display: inline-block;
+#projects{
+ 
+     margin-left: 15%;
+    width: 70%;
+    display:inline-block;
 }
+
 
