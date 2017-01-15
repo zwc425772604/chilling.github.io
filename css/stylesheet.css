@@ -1,13 +1,13 @@
 
 .header{
-    background-color:salmon;
+   /* background-color:salmon; */
     width: 70%;
     margin-left: 15%;
    
 }
 /*  nav bar */
   ul.navbar{
-      background-color:aqua; 
+     /* background-color:skyblue; */
      
       overflow:hidden;
       width: 10%;
@@ -23,7 +23,8 @@ ul.navbar li{
 ul.navbar li a{
    
      display: block;
-    color: white;
+    color: black;
+    font-size: 150%;
     text-decoration: none;
     transition: all 0.2s;
 }
@@ -44,8 +45,12 @@ ul.navbar li a:hover{
        
         width: 95%;
         margin: 0 auto;
-        background-image:url("../images/background.jpg");
-        
+        /* background-image:url("../images/pugong.jpg"); */
+         background: url(../images/pugong.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
         }
   
 
@@ -55,7 +60,8 @@ ul.navbar li a:hover{
     margin-left: 15%;
     width: 70%;
     display:inline-block;
-    background-color: bisque;
+    font-size: 200%;
+    /* background-color: bisque; */
 }
 #profile{
     float:left;
@@ -69,7 +75,7 @@ h2{
 }
 
 #education{
-   background-color: aquamarine;
+  /* background-color: aquamarine; */
    width: 70%;
     margin-left: 15%;
 }
@@ -77,6 +83,7 @@ h2{
 #education_header{
     text-align: center;
     font-family:monospace;
+   font-size: 400%;
 }
 
 .buffalo, .stonybrook{
@@ -84,15 +91,40 @@ h2{
    overflow: hidden;
    width: 70%;
    margin-left: 15%;
-   
+}
+
+.blank{
+     float:left;
+   overflow: hidden;
+   width: 70%;
+   margin-left: 15%;
+    color:white;
+    background-color: 
 }
 
 .buffalo{
-    background-color: #00bfff;
+   /* background-color: #00bfff; */
+    
+   
 }
 
+.SBTime, UBTime{
+     float:left;
+   overflow: hidden;
+   width: 70%;
+   margin-left: 15%;
+   
+}
+
+div.UBTime h1{
+    font-size: 250%;
+}
+
+div.SBTime h1{
+    font-size: 250%;
+}
 .stonybrook{
-    background-image: url(../images/SBUBackground.jpg);
+   /* background-image: url(../images/SBUBackground.jpg); */
 }
 .semester {
       text-align: center;
@@ -100,14 +132,15 @@ h2{
       margin-left: 7%;
       margin-top: 2%;
       float: left;
-      background-color: white;
+     /* background-color: white; */ 
       overflow: hidden;
       border: 1px solid lightgray;
+     background-image: url(../images/SBUBackground.jpg);
       }
 
 table {
       text-align: center;
-      font-size: 85%;
+      font-size: 155%;
       }
       
       tr:nth-child(even) {
@@ -123,7 +156,18 @@ table {
     margin-left: 15%;
     width: 70%;
     display:inline-block;
-    background-color:dimgray;
+    font-size: 200%;
+
 }
+#works h2{
+    font-size: 200%;
+}
+
+#school_projects{
+    
+}
+
+
+
 
 
