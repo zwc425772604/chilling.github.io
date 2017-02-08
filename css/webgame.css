@@ -7,3 +7,54 @@ background-color:#CCFFFF;
 padding:1.5em;
 
 }
+
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #f4f4f4;
+}
+
+li{
+    list-style: circle;
+}
+
+.container-game1{
+    width: 70%;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.pull-left{
+    float: left;
+}
+
+form.option1{
+    float: left;
+}
+
+form.option2{
+    margin-left: 15%;
+}
+
+div.game1 p{
+    font-size: 20px;
+}
+
+
+header{
+    background: #1f88f4;
+    color: #ffffff;
+    overflow: auto;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 900px){
+    
+        .container-game1{
+    width: 70%;
+   
+}
+    
+}

@@ -31,8 +31,10 @@
     <div class = "container">
         <div class = "game1">
       <header> 
-        <div class = "pull-left">  Game 1: </div>
-          <div class = "pull-right"> Calculating the Sum of the Numbers</div>
+        <div class = "pull-left"> 
+            <h2>  Game 1: Calculating the Sum of the Numbers</h2>
+          
+          </div>
     
         </header>
         <main>
@@ -40,8 +42,30 @@
       <marquee class = "rollingMarquee" id="GeneratedMarquee" direction="left" scrollamount="50" behavior="scroll">
       <span id = "rollingNums">  </span>
 
-  </marquee>
-         <button class = "start" onclick="changeNum()" value = "Start the game"> Start </button>
+      </marquee>
+            
+            <p> Select one of the following level  <strong> OR</strong> Enter the information for each category</p>
+            <hr>
+            <form class = "option1">
+            <input type = "radio" id = "Game1Level" name = "level" value = "easy"> Easy <br>
+            <input type = "radio" id = "Game1Level" name = "level" value = "medium"> Medium <br>
+            <input type = "radio" id = "Game1Level" name = "level" value = "diffucult"> Difficult <br>
+              <input type = "submit" name = "submit" value = "Play">  
+            </form>
+            
+            <form class = "option2">
+             How many numbers in total? <input type = "text" name = "numbers" placeholder = " 1 - 100"> <br>
+             How many digits for each number?  <input type = "text" name = "digits" placeholder = " 1 - 10"> <br>
+             Range for the numbers? <input type = "text" name = "ranges" placeholder=" from 1 to ?"> <br>
+             Frequency of each apperance: <input type= "text" name = "frequency" placeholder= " greater than 0.1s"> <br>
+            <input type = "submit" name = "submit" value = "Play">
+            </form>
+            <br>
+            
+               <br>
+            <hr>
+            
+         <button class = "game1Start" value = "Start the game"> Start </button>
         
         </main>
    
@@ -59,7 +83,7 @@
       <span id = "rollingNums">  </span>
 
   </marquee>
-         <button class = "start" onclick="changeNum()" value = "Start the game"> Start </button>
+         <button class = "tart" value = "Start the game"> Start </button>
         
         </main>
    
