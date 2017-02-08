@@ -6,28 +6,69 @@
 <meta charset="utf-8">
     <title> Web Games  </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="author" content="Weichao Zhao ">
     <meta name="keywords" content="Weichao Zhao, Wei Chao Zhao ">
-    <link rel = "stylesheet" href= "css/webgame.css">
+    <link rel = "stylesheet" href= "css/webgame.css" type ="text/css">
+     <script type = text/javascript src = "js/jquery.js"> </script>
     <script type = text/javascript src = "js/webgame.js"> </script>
+  
    
      
 </head>
 
 <body>
     
-    
+     <div class = "nav">    
+   <ul class = "navbar">
+    <li> <button class = "games" id = "game1Button" value = "game1">Speed Number</button></li>
+    <li><button class = "games" id = "game2Button" value = "game2">Punch</button></li>
+    <li> <button class = "games" id = "game3Button" value = "game3">Letter</button></li>
+    <li><button class = "games" id = "game4Button" value = "game4">Calculate</button></li>
    
-  <marquee id="GeneratedMarquee" direction="left" scrollamount="50" behavior="scroll">
-      <span id = "remaining">  </span>
+    </ul> 
+    </div>
+    
+    <div class = "container">
+        <div class = "game1">
+      <header> 
+        <div class = "pull-left">  Game 1: </div>
+          <div class = "pull-right"> Calculating the Sum of the Numbers</div>
+    
+        </header>
+        <main>
+        
+      <marquee class = "rollingMarquee" id="GeneratedMarquee" direction="left" scrollamount="50" behavior="scroll">
+      <span id = "rollingNums">  </span>
 
   </marquee>
-
+         <button class = "start" onclick="changeNum()" value = "Start the game"> Start </button>
+        
+        </main>
    
-   <button class = "start" onclick="changeNum()" value = "Start the game"> Start </button>
+  </div>
+        
+          <div class = "game2">
+      <header> 
+        <div class = "pull-left">  Game 2: </div>
+          <div class = "pull-right"> Memerization the words</div>
     
+        </header>
+        <main>
+        
+      <marquee class = "rollingMarquee" id="GeneratedMarquee" direction="left" scrollamount="50" behavior="scroll">
+      <span id = "rollingNums">  </span>
 
+  </marquee>
+         <button class = "start" onclick="changeNum()" value = "Start the game"> Start </button>
+        
+        </main>
+   
+  </div>
+        
+    </div>
+    
+   
+    
     
 </body>
 
