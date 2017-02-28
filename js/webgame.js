@@ -89,8 +89,6 @@ function generateQuestions1(num, ran){
 function checkAnswer()
 {
     yourAns = $("input[name = 'answer']").val();
-    alert(correctSum);
-    alert(yourAns);
     if (yourAns == correctSum)
     {
       
