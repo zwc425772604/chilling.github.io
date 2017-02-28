@@ -1,9 +1,11 @@
 
-var numbersList = [];
 var correctSum = 0;
+var number = 0;
+var frequency = 0;
+var range = 0;
+
 
 $(document).ready(function () {
-  //your code here
     //$('.container').hide();
     $('#game1Button').click(function(){
         $('.container').show();
@@ -22,7 +24,13 @@ $(document).ready(function () {
        
     });
     
-    $('form.option1').submit(function(){
+
+   
+   // $(document).delegate('.game1Start', 'click', changeNum);
+    
+});
+
+  $('form.option1').submit(function(){
         	var radioValue = $("input[name='level']:checked").val();
             if (radioValue == undefined){
                 alert("empty");
@@ -38,63 +46,38 @@ $(document).ready(function () {
             }
            
         });
-   
-    
-     $('form.option2').submit(function(){
-        var num = $("input[name = 'numbers']").val();
-         if(num){
-                alert("Your entered - " + num);
+
+
+
+
+function opt2(){
+    alert("function 2");
+      number = $("input[name = 'numbers']").val();
+        frequency = $("input[name = 'frequency']").val();
+        range = $("input[name = 'ranges']").val();
+        var listNum = generateQuestions1(number, range);
+         index = 0;
+        function changeNum() {
+            //$('#rollingNums').html(listNum[index]);
+             $('#some-id').html(listNum[index]);
+            index++;
+            
+            if (index == listNum.length){
+                index = 0;
             }
-         var frequency = $("input[name = 'frequency']").val();
-         if (frequency.length == 0){
-             alert("Please enter a number for frequency");
-         }
-        
-    })
-    
-   
-    $(document).delegate('.game1Start', 'click', changeNum);
-    
-});
-
-
-function changeNum(){
-     $('.rollingMarquee').fadeIn();
-     $('.game1').show();
-     document.getElementById("GeneratedMarquee").start();
-     var time = 3;
-     document.getElementById("rollingNums").innerHTML = time + "s";
-            var x = setInterval(function() {
-               time--;
-               if (time == 0) {
-                clearInterval(x);
-                document.getElementById("GeneratedMarquee").stop();
-                
-               }
-                document.getElementById("rollingNums").innerHTML = time + "s";
-                if (time == 0){
-                    document.getElementById("rollingNums").innerHTML = "";
-                    $('.rollingMarquee').fadeOut();
-                   
-                }
-            }, 2000);
-
-        
+           setTimeout(changeNum, 3000);
+        }
+         changeNum();
 }
 
-function generateQuestions1(number, range, frequency){
-    var i;
+function generateQuestions1(num, ran){
     
-    for (i = 0; i < number; i++){
-        var a = Math.ceil((Math.random() * range));
-         alert(a);
+    var numbersList = [];
+    for (i = 0; i < num; i++){
+        var a = Math.ceil((Math.random() * ran));
         correctSum += a;
-         
-        numbersList[i] = a;
+        numbersList.push(a);
        
     }
-    alert(correctSum); //correct
-    alert(numbersList); //correct
+   return numbersList;
 }
-
-
