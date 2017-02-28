@@ -37,9 +37,9 @@
     
         </header>
         <main>
-        <div id="some-id"> 10</div>
+       <center>  <div class = "numberBox"> <p id="random" > Number will appear here</p> </div> </center>
      
-      <span id = "rollingNums"> 5 </span>
+    
 
      
             
@@ -56,15 +56,18 @@
              How many numbers in total? <input type = "text" name = "numbers" placeholder = " 1 - 100"> <br>
              How many digits for each number?  <input type = "text" name = "digits" placeholder = " 1 - 10"> <br>
              Range for the numbers? <input type = "text" name = "ranges" placeholder=" from 1 to ?"> <br>
-             Frequency of each apperance: <input type= "text" name = "frequency" placeholder= " greater than 0.1s"> <br>
+             Time for each number: <input type= "text" name = "frequency" placeholder= " greater than 0.1s"> <br>
             <input type = "button" name = "submit" value = "Play" id = "opt2Play" onclick = "opt2()">
             </form>
             <br>
             
-               <br>
+            <div class = "finalAns">
+            <label> Enter the sum of these numbers: </label>
+            <input type="text" class = "answer" id = "answer" name = "answer">
+            <input type = "button" class = "answerButton" id = "game1Ans" value= "Enter" onclick="checkAnswer()"> 
+            </div>
             <hr>
-            
-         <button class = "game1Start" value = "Start the game"> Start </button>
+         
         
         </main>
    

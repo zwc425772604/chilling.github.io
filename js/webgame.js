@@ -6,7 +6,7 @@ var range = 0;
 
 
 $(document).ready(function () {
-    //$('.container').hide();
+    $('.container').hide();
     $('#game1Button').click(function(){
         $('.container').show();
         $('.game1').show();
@@ -14,6 +14,7 @@ $(document).ready(function () {
         $('.rollingMarquee').hide();
         //hide game 2
         $('.game2').hide();
+        $('.finalAns').hide();
     });
     
     $('#game2Button').click(function(){
@@ -51,21 +52,24 @@ $(document).ready(function () {
 
 
 function opt2(){
-    alert("function 2");
+       $('.finalAns').hide();
       number = $("input[name = 'numbers']").val();
         frequency = $("input[name = 'frequency']").val();
         range = $("input[name = 'ranges']").val();
         var listNum = generateQuestions1(number, range);
          index = 0;
         function changeNum() {
-            //$('#rollingNums').html(listNum[index]);
-             $('#some-id').html(listNum[index]);
+            if (index == listNum.length){
+                clearTimeout(a);
+                $('#random').html("Done");
+                 $('.finalAns').show();
+               
+            }
+            $('#random').html(listNum[index]);
             index++;
             
-            if (index == listNum.length){
-                index = 0;
-            }
-           setTimeout(changeNum, 3000);
+            
+           a = setTimeout(changeNum, frequency * 1000);
         }
          changeNum();
 }
@@ -80,4 +84,21 @@ function generateQuestions1(num, ran){
        
     }
    return numbersList;
+}
+
+function checkAnswer()
+{
+    yourAns = $("input[name = 'answer']").val();
+    alert(correctSum);
+    alert(yourAns);
+    if (yourAns == correctSum)
+    {
+      
+        $('.answer').css("background-color", "green");
+    }
+    else{
+        
+           $('.answer').css("background-color" ,"red");
+    }
+    correctSum = 0;
 }
